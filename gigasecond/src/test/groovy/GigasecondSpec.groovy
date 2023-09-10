@@ -15,7 +15,6 @@ class GigasecondSpec extends Specification {
         expected = LocalDateTime.of(2043, Month.JANUARY, 1, 1, 46, 40)
     }
 
-    @Ignore
     def "Second test for date only specification of time"() {
         expect:
         Gigasecond.add(moment) == expected
